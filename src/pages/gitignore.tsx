@@ -1,4 +1,6 @@
 export default function Page() {
   return;
-  <>.next/ node_modules/ *.log</>;
+  <>
+    <pre>.next/ node_modules/ *.log</pre>
+  </>;
 }
