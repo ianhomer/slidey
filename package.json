@@ -1,14 +1,30 @@
 {
   "name": "slidey",
   "version": "1.0.0",
-  "main": "index.js",
+  "license": "MIT",
   "repository": "git@github.com:ianhomer/slidey.git",
   "author": "Ian Homer <ian@purplepip.com>",
-  "license": "MIT",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
+    "eslint": "eslint src --ext .ts,.tsx",
+    "eslint:fix": "eslint src --ext .ts,.tsx --fix",
+    "lint": "run-s prettier eslint",
+    "lint:fix": "run-s package:fix prettier:fix eslint:fix",
+    "package:fix": "format-package -w",
+    "prettier": "npx prettier --check .",
+    "prettier:fix": "npx prettier --write .",
     "start": "next start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --quiet",
+      "pre-push": "yarn lint"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,ts,tsx,yaml}": "prettier --write"
   },
   "dependencies": {
     "next": "^10.0.5",
@@ -16,6 +32,16 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "format-package": "^6.1.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }
 }
