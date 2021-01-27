@@ -1,2 +1,6 @@
 # slidey
-Slides
+
+## tl;dr
+
+    yarn
+    yarn dev
