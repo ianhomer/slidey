@@ -9,6 +9,8 @@ const journey: string[] = [
   "markdown",
   "git",
   "lint",
+  "assert",
+  "ci",
   "vercel",
 ];
 
