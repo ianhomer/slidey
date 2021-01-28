@@ -5,7 +5,9 @@ export default function Page() {
     <Layout>
       <Content
         children={`
-  yarn dev http://localhost:3000/</>
+    yarn dev 
+
+visit http://localhost:3000/
 `}
       />
     </Layout>
