@@ -1,6 +1,7 @@
 import startCase from "lodash/startCase";
 import Head from "next/head";
 import { useRouter } from "next/router";
+
 import { Journey } from ".";
 
 interface LayoutProps {
