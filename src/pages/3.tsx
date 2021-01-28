@@ -1,11 +1,9 @@
-import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
+import Content from "../components/Content";
 
 export default function Page() {
   return (
     <>
-      <ReactMarkdown
-        plugins={[gfm]}
+      <Content
         children={`
     touch src/pages/index.tsx
     export default function Page() {
