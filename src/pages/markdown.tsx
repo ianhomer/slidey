@@ -1,4 +1,11 @@
+import { Content } from "../components";
+
 export default function Page() {
-  return;
-  <>yarn add react-markdown remark-gfm</>;
+  return (
+    <Content
+      children={`
+    yarn add react-markdown remark-gfm
+`}
+    />
+  );
 }

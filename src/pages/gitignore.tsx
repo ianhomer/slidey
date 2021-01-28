@@ -1,6 +1,11 @@
+import { Content } from "../components";
+
 export default function Page() {
-  return;
-  <>
-    <pre>.next/ node_modules/ *.log</pre>
-  </>;
+  return (
+    <Content
+      children={`
+    .next/ node_modules/ *.log
+    `}
+    />
+  );
 }

@@ -1,3 +1,5 @@
+import { Content } from "../components";
+
 export default function Page() {
-  return <>Oh!</>;
+  return <Content>Oh!</Content>;
 }

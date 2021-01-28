@@ -1,17 +1,15 @@
-import Content from "../components/Content";
+import { Content } from "../components";
 
 export default function Page() {
   return (
-    <>
-      <Content
-        children={`
+    <Content
+      children={`
     "scripts": {
       "dev": "next dev", 
       "build": "next build", 
       "start": "next start"
     }
 `}
-      />
-    </>
+    />
   );
 }

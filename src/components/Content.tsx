@@ -5,6 +5,6 @@ interface MarkdownProps {
   children: string;
 }
 
-export default function Content(props: MarkdownProps): JSX.Element {
+export function Content(props: MarkdownProps): JSX.Element {
   return <ReactMarkdown plugins={[gfm]} children={props.children} />;
 }

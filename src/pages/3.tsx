@@ -1,17 +1,14 @@
-import Content from "../components/Content";
+import { Content } from "../components";
 
 export default function Page() {
   return (
-    <>
-      <Content
-        children={`
+    <Content
+      children={`
     touch src/pages/index.tsx
     export default function Page() {
       return <>oh!</>;
     }
 `}
-      />
-      oh
-    </>
+    />
   );
 }
