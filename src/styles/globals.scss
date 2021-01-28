@@ -1,0 +1,30 @@
+$heading: #e6007e;
+$background: #0e253a;
+
+html,
+body {
+  background-color: #0e253a;
+  color: #fff;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: sofia-pro, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+del {
+  text-decoration: none;
+  color: #999;
+}
+
+h1 {
+  color: $heading;
+  text-transform: uppercase;
+  padding-left: 1em;
+  padding-top: 1em;
+  margin-top: 0em;
+}

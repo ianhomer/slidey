@@ -1,6 +1,8 @@
 import startCase from "lodash/startCase";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Prism from "prismjs";
+import { useEffect } from "react";
 
 import { Journey } from ".";
 
@@ -12,6 +14,10 @@ interface LayoutProps {
 export function Layout(props: LayoutProps): JSX.Element {
   const router = useRouter();
   const title = props.title ?? startCase(router.pathname.replace(/[/-]/g, " "));
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
 
   return (
     <>
