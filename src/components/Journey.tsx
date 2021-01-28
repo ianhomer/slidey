@@ -1,6 +1,16 @@
 import { JourneyLink } from ".";
 
-const journey: string[] = ["", "1", "2", "3", "4", "markdown", "git", "lint"];
+const journey: string[] = [
+  "",
+  "1",
+  "2",
+  "3",
+  "4",
+  "markdown",
+  "git",
+  "lint",
+  "vercel",
+];
 
 export function Journey(): JSX.Element {
   return (
