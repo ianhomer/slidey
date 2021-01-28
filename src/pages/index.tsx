@@ -1,5 +1,9 @@
-import { Content } from "../components";
+import { Content, Layout } from "../components";
 
 export default function Page() {
-  return <Content>Oh!</Content>;
+  return (
+    <Layout>
+      <Content>Oh!</Content>
+    </Layout>
+  );
 }

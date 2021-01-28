@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { Content } from "../components";
+import { Content, Layout } from "../components";
 
 export async function getStaticProps() {
   const script = fs.readFileSync("./scripts/opt-1-lint.sh", "utf-8");
@@ -14,10 +14,11 @@ export async function getStaticProps() {
 
 export default function Page({ script }) {
   return (
-    <Content
-      children={
-        script +
-        `
+    <Layout>
+      <Content
+        children={
+          script +
+          `
      "husky":
     "hooks": "pre-commit": "lint-staged --quiet", "pre-push": "yarn lint" ,
     "lint-staged": "*.
@@ -28,7 +29,8 @@ export default function Page({ script }) {
     "format-package -w", "prettier": "npx prettier --check .", "prettier:fix":
     "npx prettier --write .", .prettierignore .next .eslintrc.js
 `
-      }
-    />
+        }
+      />
+    </Layout>
   );
 }
