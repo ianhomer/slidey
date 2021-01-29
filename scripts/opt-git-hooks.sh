@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-yarn -D add         \ 
-  husky lint-staged
+yarn -D add husky lint-staged
