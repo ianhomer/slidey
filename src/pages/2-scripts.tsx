@@ -5,11 +5,13 @@ export default function Page() {
     <Layout>
       <Content
         children={`
-create src/pages/index.tsx
-
-    export default function Page() {
-      return <>oh!</>;
-    }
+${"```"}json
+"scripts": {
+  "dev": "next dev", 
+  "build": "next build", 
+  "start": "next start"
+}
+${"```"}
 `}
       />
     </Layout>

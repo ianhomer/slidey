@@ -5,12 +5,14 @@ export default function Page() {
     <Layout>
       <Content
         children={`
-    "scripts": {
-      "dev": "next dev", 
-      "build": "next build", 
-      "start": "next start"
-    }
-`}
+${"```"}sh
+mkdir my-slides
+cd my-slides
+yarn init
+yarn add next react react-dom 
+yarn add --dev typescript yarn add --dev @types/react @types/node
+${"```"}
+  `}
       />
     </Layout>
   );
