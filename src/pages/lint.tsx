@@ -21,15 +21,19 @@ export default function Page({ script }) {
           script +
           "```\n" +
           `
+package.json
+
 ${"```"}json
-    "eslint": "eslint src --ext .ts,.tsx",
-    "eslint:fix": "eslint src --ext .ts,.tsx --fix",
-    "lint": "run-s prettier eslint",
-    "lint:fix": "run-s package:fix prettier:fix eslint:fix",
-    "package:fix": "format-package -w",
-    "prettier": "npx prettier --check .",
-    "prettier:fix": "npx prettier --write .",
+"eslint": "eslint src --ext .ts,.tsx",
+"eslint:fix": "eslint src --ext .ts,.tsx --fix",
+"lint": "run-s prettier eslint",
+"lint:fix": "run-s package:fix prettier:fix eslint:fix",
+"package:fix": "format-package -w",
+"prettier": "npx prettier --check .",
+"prettier:fix": "npx prettier --write .",
 ${"```"}
+
+.eslintrc.js
 `
         }
       />

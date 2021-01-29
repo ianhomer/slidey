@@ -5,7 +5,13 @@ export default function Page() {
     <Layout>
       <Content
         children={`
-    .next/ node_modules/ *.log
+.gitignore
+
+${"```"}
+.next/
+node_modules/
+*.log
+${"```"}
     `}
       />
     </Layout>

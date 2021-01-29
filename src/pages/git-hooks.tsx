@@ -22,15 +22,15 @@ export default function Page({ script }) {
           "```\n" +
           `
 ${"```"}json
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged --quiet",
-      "pre-push": "yarn lint"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,ts,tsx,yaml}": "prettier --write"
-  },
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged --quiet",
+    "pre-push": "yarn lint"
+  }
+},
+"lint-staged": {
+  "*.{js,json,ts,tsx,yaml}": "prettier --write"
+},
 ${"```"}
 `
         }
