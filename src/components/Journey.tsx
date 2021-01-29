@@ -7,14 +7,15 @@ const journey: string[] = [
   "1-initialise",
   "2-scripts",
   "3-first-page",
-  "4-start-dev",
-  "markdown",
+  "4-dev",
+  "5-start-prod",
   "lint",
+  "assert",
   "git",
   "git-hooks",
-  "assert",
   "ci",
   "vercel",
+  "markdown",
 ];
 
 const Index = styled.div`
