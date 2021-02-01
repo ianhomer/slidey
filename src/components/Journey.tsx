@@ -2,21 +2,9 @@ import styled from "styled-components";
 
 import { JourneyLink } from ".";
 
-const journey: string[] = [
-  "",
-  "1-initialise",
-  "2-scripts",
-  "3-first-page",
-  "4-dev",
-  "5-start-prod",
-  "lint",
-  "assert",
-  "git",
-  "git-hooks",
-  "ci",
-  "vercel",
-  "markdown",
-];
+interface JourneyProps {
+  journey: string[];
+}
 
 const Index = styled.div`
   @media (min-width: 800px) {
@@ -30,11 +18,11 @@ const Index = styled.div`
   }
 `;
 
-export function Journey(): JSX.Element {
+export function Journey(props: JourneyProps): JSX.Element {
   return (
     <>
       <Index>
-        {journey.map((name, i) => (
+        {props.journey.map((name, i) => (
           <JourneyLink key={i} name={name} />
         ))}
       </Index>
