@@ -1,14 +1,17 @@
-$heading: #e6007e;
-$background: #0e253a;
+@import "./colors";
 
 html,
 body {
-  background-color: #0e253a;
+  background-color: $color-background;
   color: #fff;
   overflow: hidden;
   padding: 0;
   margin: 0;
   font-family: sofia-pro, Helvetica, Arial, sans-serif;
+}
+
+main section pre {
+  font-size: 0.75em !important;
 }
 
 main section {
@@ -26,12 +29,8 @@ del {
   color: #999;
 }
 
-pre {
-  transform: scale(0.7);
-}
-
 h1 {
-  color: $heading;
+  color: $color-heading;
   text-transform: uppercase;
   padding-left: 1em;
   padding-top: 1em;

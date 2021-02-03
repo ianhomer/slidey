@@ -29,8 +29,6 @@ ${"```"}json
 "prettier": "npx prettier --check .",
 "prettier:fix": "npx prettier --write .",
 ${"```"}
-
-.eslintrc.js
 `}
       />
     </Layout>
