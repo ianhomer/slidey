@@ -12,7 +12,7 @@ body {
 }
 
 main section {
-  padding: 2em;
+  padding: 0em 1em;
   font-size: 1.5em;
 }
 
@@ -24,6 +24,10 @@ a {
 del {
   text-decoration: none;
   color: #999;
+}
+
+pre {
+  transform: scale(0.7);
 }
 
 h1 {

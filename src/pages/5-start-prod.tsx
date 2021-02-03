@@ -9,6 +9,8 @@ export default function Page() {
     yarn start
 
 visit http://localhost:3000/
+
+look in ${"`"}.next${"`"} folder folder for build files
 `}
       />
     </Layout>
