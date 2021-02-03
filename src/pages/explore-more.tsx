@@ -6,7 +6,7 @@ export default function Page() {
       <Content
         children={`
 
-- Getting started - https://nextjs.org/docs
+- Follow the getting started guide - https://nextjs.org/docs
 `}
       />
     </Layout>

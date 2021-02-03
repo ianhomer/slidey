@@ -7,16 +7,14 @@ export default function Page() {
         children={`
 Source code for these slides at https://github.com/ianhomer/slidey
 
-Try to do the following
+Dojo:
 
 - Set up a layout
 - Set up global styles
-- props & state
-- Server side rendering
-- React hooks
-
-Then explore more.
-
+- Experiment with props & state
+- Experiment with react hooks
+- Try server side rendering
+- Create the best slide transition
 `}
       />
     </Layout>
