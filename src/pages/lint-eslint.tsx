@@ -15,7 +15,7 @@ export default function Page({ script }) {
   return (
     <Layout title=".eslintrc.js">
       <div className="smaller">
-        <Content className="smaller" children={script} />
+        <Content children={script} />
       </div>
     </Layout>
   );
