@@ -7,14 +7,21 @@ export default function Page() {
         children={`
 Source code for these slides at https://github.com/ianhomer/slidey
 
-Dojo:
+Exercise:
 
-- Set up a layout
+- Set up a reusable layout
 - Set up global styles
 - Experiment with props & state
 - Experiment with react hooks
 - Try server side rendering
-- Create the best slide transition
+
+Then ... impress me ...
+
+**☞ Award for the best slide transition ☜**
+
+⌘ ☻☃︎☻☼☻🂡☻❖☻✼☻❀☻ ⌘
+
+Read ahead for linting, **CI** - GitHub actions and **CD** - deployment with Vercel.
 `}
       />
     </Layout>
