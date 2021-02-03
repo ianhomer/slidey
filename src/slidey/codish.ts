@@ -5,6 +5,11 @@ export function getCode(fs, fileName: string): string {
   return stripComments(script);
 }
 
+export function getCodeBlock(fs, fileName: string): string {
+  return `${"```"}sh
+${getCode(fs, fileName)}${"```"}`;
+}
+
 export function stripComments(s: string): string {
   return s.replace(/#[^\n]*\n/g, "");
 }

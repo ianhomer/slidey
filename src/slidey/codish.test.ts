@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { getCode, stripComments } from ".";
+import { getCode, getCodeBlock, stripComments } from ".";
 
 it("Removes comments", () => {
   expect(
@@ -10,8 +10,16 @@ not comment`)
   ).toBe(`
 not comment`);
 });
-it("OK", () => {
+
+it("Gets script", () => {
   const code = getCode(fs, "./scripts/opt-lint.sh");
   expect(code.substring(0, 4)).toBe("yarn");
   expect(code.split("\n").length).toBe(5);
+});
+
+it("Generates code block", () => {
+  const block = getCodeBlock(fs, "./scripts/opt-git-hooks.sh");
+  expect(block).toBe(`${"```"}sh
+yarn -D add husky lint-staged
+${"```"}`);
 });
