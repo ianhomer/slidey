@@ -1,9 +1,10 @@
 import fs from "fs";
 
 import { Content, Layout } from "../components";
+import { getCode } from "../slidey";
 
 export async function getStaticProps() {
-  const script = fs.readFileSync("./scripts/opt-git-hooks.sh", "utf-8");
+  const script = getCode(fs, "./scripts/opt-git-hooks.sh");
 
   return {
     props: {

@@ -1,10 +1,10 @@
 import fs from "fs";
 
 import { Content, Layout } from "../components";
+import { getCode } from "../slidey";
 
 export async function getStaticProps() {
-  const script = fs.readFileSync("./scripts/opt-lint.sh", "utf-8");
-
+  const script = getCode(fs, "./scripts/opt-lint.sh");
   return {
     props: {
       script,
