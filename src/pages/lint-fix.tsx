@@ -1,6 +1,6 @@
 import { Content, Layout } from "../components";
 
-export default function Page({ script }) {
+export default function Page() {
   return (
     <Layout>
       <Content
