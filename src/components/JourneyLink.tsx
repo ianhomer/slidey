@@ -7,8 +7,8 @@ interface JourneyLinkProps {
 }
 
 const StyledLink = styled.a<{ active: boolean }>`
-  background-color: ${(active: boolean) => (active ? "#fff" : "auto")};
-  color: ${(active: boolean) => (active ? "#000" : "auto")};
+  background-color: ${(active) => (active ? "#fff" : "auto")};
+  color: ${(active) => (active ? "#000" : "auto")};
   display: block;
   float: left;
   width: 1.5em;
