@@ -2,7 +2,7 @@ import { Content, Layout } from "../components";
 
 export default function Page() {
   return (
-    <Layout>
+    <Layout title="dojo time">
       <Content
         children={`
 Source code for these slides at https://github.com/ianhomer/slidey
