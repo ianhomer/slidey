@@ -12,6 +12,9 @@ yarn init
 yarn add next react react-dom 
 yarn add --dev typescript @types/react @types/node
 ${"```"}
+
+https://slidey.ianhomer.vercel.app
+
   `}
       />
     </Layout>

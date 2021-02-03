@@ -12,6 +12,7 @@ const Index = styled.div`
     position: absolute;
     bottom: 0%;
     z-index: 999;
+    background-color: #0e253a;
   }
   @media (max-width: 800px) {
     display: none;

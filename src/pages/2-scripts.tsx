@@ -5,6 +5,8 @@ export default function Page() {
     <Layout>
       <Content
         children={`
+Add the following to your package.json
+
 ${"```"}json
 "scripts": {
   "dev": "next dev", 

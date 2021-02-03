@@ -10,7 +10,7 @@ export default function Page() {
 
 visit http://localhost:3000/
 
-look in ${"`"}.next${"`"} folder folder for build files
+look in ${"`"}.next${"`"} folder for build files
 `}
       />
     </Layout>

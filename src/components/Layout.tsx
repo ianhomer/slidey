@@ -24,10 +24,14 @@ const journey: string[] = [
   "lint-prettier",
   "lint-fix",
   "assert",
+  "assertion",
   "git",
   "git-hooks",
-  "ci",
+  "ci-build",
+  "ci-update",
+  "source",
   "vercel",
+  "explore-more",
   "markdown",
 ];
 

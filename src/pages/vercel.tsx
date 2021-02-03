@@ -5,11 +5,15 @@ export default function Page() {
     <Layout>
       <Content
         children={`
-- Create account https://vercel.com/
-- New Project -> select your github project 
-  - -> (Configure GitHub App if you need to give permissions)
-- Import -> deploy
-- Visit your vercel deployment URL.
+- https://vercel.com/
+- Start Deploying
+- New Project
+- Select your GitHub project 
+- Configure GitHub App if you need to give permissions
+- Import
+- Deploy
+- Visit URL for your Vercel deployment
+- Change code in GitHub to auto-update
     `}
       />
     </Layout>

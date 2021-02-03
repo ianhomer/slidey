@@ -6,15 +6,21 @@ import { getCodeBlock } from "../slidey";
 export async function getStaticProps() {
   return {
     props: {
-      script: getCodeBlock(fs, "./.prettierignore"),
+      script: getCodeBlock(fs, "./src/slidey.test.ts"),
     },
   };
 }
 
 export default function Page({ script }) {
   return (
-    <Layout title=".prettierignore">
-      <Content children={script} />
+    <Layout title="src/slidey.test.ts">
+      <Content
+        children={`
+${script}
+
+     yarn test
+`}
+      />
     </Layout>
   );
 }

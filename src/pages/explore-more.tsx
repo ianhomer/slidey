@@ -5,8 +5,9 @@ export default function Page() {
     <Layout>
       <Content
         children={`
-add .github/workflows/build.yaml and update.yaml
-    `}
+
+- Getting started - https://nextjs.org/docs
+`}
       />
     </Layout>
   );
