@@ -5,6 +5,6 @@ export function getCode(fs, fileName: string): string {
   return stripComments(script);
 }
 
-export function stripComments(string: s): string {
-  return string.replace(/#[^\n]*\n/g, "");
+export function stripComments(s: string): string {
+  return s.replace(/#[^\n]*\n/g, "");
 }
