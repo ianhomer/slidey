@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { getCode, getCodeBlock, stripComments } from ".";
+import { getCode, getCodeBlock, scriptType, stripComments } from ".";
 
 it("Removes comments", () => {
   expect(
@@ -22,4 +22,9 @@ it("Generates code block", () => {
   expect(block).toBe(`${"```"}sh
 yarn -D add husky lint-staged
 ${"```"}`);
+});
+
+it("Gets script type", () => {
+  expect(scriptType("blah.sh")).toBe("sh");
+  expect(scriptType("blah.js")).toBe("javascript");
 });

@@ -1,14 +1,12 @@
 import fs from "fs";
 
 import { Content, Layout } from "../components";
-import { getCode } from "../slidey";
+import { getCodeBlock } from "../slidey";
 
 export async function getStaticProps() {
-  const script = getCode(fs, "./scripts/opt-git-hooks.sh");
-
   return {
     props: {
-      script,
+      script: getCodeBlock(fs, "./scripts/opt-git-hooks.sh"),
     },
   };
 }
@@ -17,11 +15,9 @@ export default function Page({ script }) {
   return (
     <Layout>
       <Content
-        children={
-          "```sh\n" +
-          script +
-          "```\n" +
-          `
+        children={`
+${script}
+
 ${"```"}json
 "husky": {
   "hooks": {
@@ -33,8 +29,7 @@ ${"```"}json
   "*.{js,json,ts,tsx,yaml}": "prettier --write"
 },
 ${"```"}
-`
-        }
+`}
       />
     </Layout>
   );

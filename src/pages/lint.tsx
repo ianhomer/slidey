@@ -1,13 +1,12 @@
 import fs from "fs";
 
 import { Content, Layout } from "../components";
-import { getCode } from "../slidey";
+import { getCodeBlock } from "../slidey";
 
 export async function getStaticProps() {
-  const script = getCode(fs, "./scripts/opt-lint.sh");
   return {
     props: {
-      script,
+      script: getCodeBlock(fs, "./scripts/opt-lint.sh"),
     },
   };
 }
@@ -16,11 +15,9 @@ export default function Page({ script }) {
   return (
     <Layout>
       <Content
-        children={
-          "```sh\n" +
-          script +
-          "```\n" +
-          `
+        children={`
+${script}
+
 package.json
 
 ${"```"}json
@@ -34,8 +31,7 @@ ${"```"}json
 ${"```"}
 
 .eslintrc.js
-`
-        }
+`}
       />
     </Layout>
   );
