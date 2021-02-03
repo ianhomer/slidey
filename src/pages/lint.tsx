@@ -13,7 +13,7 @@ export async function getStaticProps() {
 
 export default function Page({ script }) {
   return (
-    <Layout>
+    <Layout title="Linting with eslint and prettier">
       <Content
         children={`
 ${script}

@@ -13,7 +13,7 @@ export async function getStaticProps() {
 
 export default function Page({ script }) {
   return (
-    <Layout>
+    <Layout title="Unit tests with Jest">
       <Content
         children={`
     yarn -D add @types/jest jest

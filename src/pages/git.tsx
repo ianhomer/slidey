@@ -13,14 +13,8 @@ export async function getStaticProps() {
 
 export default function Page({ script }) {
   return (
-    <Layout>
-      <Content
-        children={`
-.gitignore
-
-${script}
-    `}
-      />
+    <Layout title=".gitignore">
+      <Content children={script} />
     </Layout>
   );
 }

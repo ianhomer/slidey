@@ -16,6 +16,8 @@ export default function Page({ script }) {
     <Layout>
       <Content
         children={`
+Auto lint on commit
+
 ${script}
 
 ${"```"}json
