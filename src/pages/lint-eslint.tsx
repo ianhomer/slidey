@@ -13,14 +13,10 @@ export async function getStaticProps() {
 
 export default function Page({ script }) {
   return (
-    <Layout>
-      <Content
-        children={`
-.eslintrc.js
-
-${script}
-`}
-      />
+    <Layout title=".eslintrc.js">
+      <div className="smaller">
+        <Content className="smaller" children={script} />
+      </div>
     </Layout>
   );
 }

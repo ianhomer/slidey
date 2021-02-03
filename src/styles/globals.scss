@@ -14,6 +14,10 @@ main section pre {
   font-size: 0.75em !important;
 }
 
+div.smaller {
+  font-size: 0.75em;
+}
+
 main section {
   padding: 0em 1em;
   font-size: 1.5em;
@@ -31,7 +35,6 @@ del {
 
 h1 {
   color: $color-heading;
-  text-transform: uppercase;
   padding-left: 1em;
   padding-top: 1em;
   margin-top: 0em;

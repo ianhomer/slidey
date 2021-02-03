@@ -13,11 +13,9 @@ export async function getStaticProps() {
 
 export default function Page({ script }) {
   return (
-    <Layout>
+    <Layout title=".prettierignore">
       <Content
         children={`
-.prettierignore
-
 ${script}
 `}
       />
