@@ -6,16 +6,21 @@ interface MarkdownProps {
   children: string;
 }
 
-const renderers = {
-  code: ({ language, value }) => {
-    return <SyntaxHighlighter language={language} children={value} />;
-  },
+const components = {
+  code({ node, inline=false, className="", children, ...props }): JSX.Element {
+    const match = /language-(\w+)/.exec(className || '')
+    return !inline && match ? (
+      <SyntaxHighlighter language={match[1]} PreTag="div" children={String(children).replace(/\n$/, '')}/>
+    ) : (
+      <code className={className} {...props} />
+    )
+  }
 };
 
 export function Content(props: MarkdownProps): JSX.Element {
   return (
     <ReactMarkdown
-      renderers={renderers}
+      components={components}
       plugins={[gfm]}
       children={props.children}
     />
