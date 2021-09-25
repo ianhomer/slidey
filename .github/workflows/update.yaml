@@ -20,6 +20,7 @@ jobs:
           yarn
           yarn update
           yarn
+          yarn run e2e:dev:smoke
           yarn build
         env:
           CI: false
