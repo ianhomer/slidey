@@ -9,14 +9,15 @@ interface MarkdownProps {
 const components = {
   code({ inline = false, className = "", children, ...props }): JSX.Element {
     const match = /language-(\w+)/.exec(className || "");
-    return !inline && match ? (
+    const language = match ? match[1] : "sh"
+    return !inline && language ? (
       <SyntaxHighlighter
-        language={match[1]}
+        language={language}
         PreTag="div"
         children={String(children).replace(/\n$/, "")}
       />
     ) : (
-      <code className={className} {...props} />
+      <code className={className} {...props} >{children}</code>
     );
   },
 };
